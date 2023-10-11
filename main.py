@@ -30,7 +30,7 @@ def adicionar_tripulante(navios,count, nome, idade):
     if numero_navio != None:
         navio = navios[numero_navio]
         if len(navio.tripulacao) < 50:
-            codigo_tripulante = count  # Gera o código automaticamente
+            codigo_tripulante = count  
             tripulante = Tripulante(codigo_tripulante, nome, idade)
             navio.tripulacao[codigo_tripulante] = tripulante
             print("Tripulante", codigo_tripulante, "adicionado ao Navio", numero_navio)
